@@ -1,0 +1,88 @@
+EESchema Schematic File Version 4
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 2000 950  550  300 
+U 5D1172DE
+F0 "ClockProvider01" 50
+F1 "ClockProvider.sch" 50
+F4 "Clk" O R 2550 1100 50 
+$EndSheet
+Wire Wire Line
+	1100 700  1100 750 
+$Comp
+L power:+12V #PWR0102
+U 1 1 5D1362F3
+P 1100 700
+F 0 "#PWR0102" H 1100 550 50  0001 C CNN
+F 1 "+12V" H 1115 873 50  0000 C CNN
+F 2 "" H 1100 700 50  0001 C CNN
+F 3 "" H 1100 700 50  0001 C CNN
+	1    1100 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5D137CC7
+P 1100 1350
+F 0 "#PWR0103" H 1100 1100 50  0001 C CNN
+F 1 "GND" H 1105 1177 50  0000 C CNN
+F 2 "" H 1100 1350 50  0001 C CNN
+F 3 "" H 1100 1350 50  0001 C CNN
+	1    1100 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 1250 1100 1300
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5D13C6DB
+P 1100 750
+F 0 "#FLG0101" H 1100 825 50  0001 C CNN
+F 1 "PWR_FLAG" V 1100 878 50  0000 L CNN
+F 2 "" H 1100 750 50  0001 C CNN
+F 3 "~" H 1100 750 50  0001 C CNN
+	1    1100 750 
+	0    1    1    0   
+$EndComp
+Connection ~ 1100 750 
+Wire Wire Line
+	1100 750  1100 850 
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5D13CBD4
+P 1100 1300
+F 0 "#FLG0102" H 1100 1375 50  0001 C CNN
+F 1 "PWR_FLAG" V 1100 1428 50  0000 L CNN
+F 2 "" H 1100 1300 50  0001 C CNN
+F 3 "~" H 1100 1300 50  0001 C CNN
+	1    1100 1300
+	0    1    1    0   
+$EndComp
+Connection ~ 1100 1300
+Wire Wire Line
+	1100 1300 1100 1350
+$Comp
+L Device:Battery BT1
+U 1 1 5D11AF0F
+P 1100 1050
+F 0 "BT1" H 1208 1096 50  0000 L CNN
+F 1 "12V" H 1208 1005 50  0000 L CNN
+F 2 "" V 1100 1110 50  0001 C CNN
+F 3 "~" V 1100 1110 50  0001 C CNN
+	1    1100 1050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
