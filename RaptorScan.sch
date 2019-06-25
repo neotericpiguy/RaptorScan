@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:RaptorScan-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -18,7 +19,7 @@ S 2000 950  550  300
 U 5D1172DE
 F0 "ClockProvider01" 50
 F1 "ClockProvider.sch" 50
-F4 "Clk" O R 2550 1100 50 
+F2 "Clk" O R 2550 1100 50 
 $EndSheet
 Wire Wire Line
 	1100 700  1100 750 
@@ -85,4 +86,17 @@ F 3 "~" V 1100 1110 50  0001 C CNN
 	1    1100 1050
 	1    0    0    -1  
 $EndComp
+$Sheet
+S 3300 900  550  450 
+U 5D12D5A5
+F0 "7BitCounter" 50
+F1 "7BitCounter.sch" 50
+F2 "Clkin" I L 3300 1100 50 
+F3 "Q0" O R 3850 950 50 
+F4 "Q1" O R 3850 1050 50 
+F5 "Q2" O R 3850 1150 50 
+F6 "Qf" O R 3850 1250 50 
+$EndSheet
+Wire Wire Line
+	2550 1100 3300 1100
 $EndSCHEMATC
