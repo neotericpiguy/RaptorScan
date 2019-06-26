@@ -4,4 +4,4 @@ PROJECT=$(shell basename `pwd`)
 .PHONY: all distclean clean
 
 clean:
-	-rm -rf *.bak
+	-rm -rf *.bak $(PROJECT) $(PROJECT).xml
