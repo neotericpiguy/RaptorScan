@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -160,34 +160,40 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J3
 U 1 1 5D145A5E
-P 5400 4550
-F 0 "J3" H 5318 4325 50  0000 C CNN
-F 1 "Conn_01x01" H 5318 4416 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5400 4550 50  0001 C CNN
-F 3 "~" H 5400 4550 50  0001 C CNN
-	1    5400 4550
+P 3150 5150
+F 0 "J3" H 3068 4925 50  0000 C CNN
+F 1 "Conn_01x01" H 3068 5016 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3150 5150 50  0001 C CNN
+F 3 "~" H 3150 5150 50  0001 C CNN
+	1    3150 5150
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J4
 U 1 1 5D146214
-P 5400 4900
-F 0 "J4" H 5318 4675 50  0000 C CNN
-F 1 "Conn_01x01" H 5318 4766 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5400 4900 50  0001 C CNN
-F 3 "~" H 5400 4900 50  0001 C CNN
-	1    5400 4900
+P 3100 5500
+F 0 "J4" H 3018 5275 50  0000 C CNN
+F 1 "Conn_01x01" H 3018 5366 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3100 5500 50  0001 C CNN
+F 3 "~" H 3100 5500 50  0001 C CNN
+	1    3100 5500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J5
 U 1 1 5D1464E8
-P 5400 5250
-F 0 "J5" H 5318 5025 50  0000 C CNN
-F 1 "Conn_01x01" H 5318 5116 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5400 5250 50  0001 C CNN
-F 3 "~" H 5400 5250 50  0001 C CNN
-	1    5400 5250
+P 3100 5850
+F 0 "J5" H 3018 5625 50  0000 C CNN
+F 1 "Conn_01x01" H 3018 5716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 3100 5850 50  0001 C CNN
+F 3 "~" H 3100 5850 50  0001 C CNN
+	1    3100 5850
 	-1   0    0    1   
 $EndComp
+$Sheet
+S 4700 4900 650  550 
+U 5D1523E9
+F0 "LedDriver" 50
+F1 "LedDriver.sch" 50
+$EndSheet
 $EndSCHEMATC
