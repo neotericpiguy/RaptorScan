@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -18,7 +18,9 @@ $Comp
 L Transistor_BJT:PN2222A Q?
 U 1 1 5D152BEF
 P 5550 1600
-F 0 "Q?" H 5741 1646 50  0000 L CNN
+AR Path="/5D152BEF" Ref="Q?"  Part="1" 
+AR Path="/5D1523E9/5D152BEF" Ref="Q1"  Part="1" 
+F 0 "Q1" H 5741 1646 50  0000 L CNN
 F 1 "PN2222A" H 5741 1555 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5750 1525 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 5550 1600 50  0001 L CNN
@@ -30,8 +32,8 @@ L Transistor_BJT:PN2222A Q?
 U 1 1 5D152BF5
 P 5550 2150
 AR Path="/5D152BF5" Ref="Q?"  Part="1" 
-AR Path="/5D1523E9/5D152BF5" Ref="Q?"  Part="1" 
-F 0 "Q?" H 5741 2196 50  0000 L CNN
+AR Path="/5D1523E9/5D152BF5" Ref="Q2"  Part="1" 
+F 0 "Q2" H 5741 2196 50  0000 L CNN
 F 1 "PN2222A" H 5741 2105 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5750 2075 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 5550 2150 50  0001 L CNN
@@ -43,8 +45,8 @@ L Transistor_BJT:PN2222A Q?
 U 1 1 5D152BFB
 P 5550 2700
 AR Path="/5D152BFB" Ref="Q?"  Part="1" 
-AR Path="/5D1523E9/5D152BFB" Ref="Q?"  Part="1" 
-F 0 "Q?" H 5741 2746 50  0000 L CNN
+AR Path="/5D1523E9/5D152BFB" Ref="Q3"  Part="1" 
+F 0 "Q3" H 5741 2746 50  0000 L CNN
 F 1 "PN2222A" H 5741 2655 50  0000 L CNN
 F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5750 2625 50  0001 L CIN
 F 3 "http://www.fairchildsemi.com/ds/PN/PN2222A.pdf" H 5550 2700 50  0001 L CNN
@@ -71,10 +73,10 @@ Connection ~ 5800 2350
 Wire Wire Line
 	5800 2350 5800 1800
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 5D15914C
 P 5650 3050
-F 0 "#PWR?" H 5650 2800 50  0001 C CNN
+F 0 "#PWR08" H 5650 2800 50  0001 C CNN
 F 1 "GND" H 5655 2877 50  0000 C CNN
 F 2 "" H 5650 3050 50  0001 C CNN
 F 3 "" H 5650 3050 50  0001 C CNN
@@ -84,37 +86,37 @@ $EndComp
 Connection ~ 5650 3050
 Wire Wire Line
 	5650 3050 5650 3100
-Text Notes 6300 1400 0    50   ~ 0
+Text Notes 5350 1150 0    50   ~ 0
 R=120/Ic\n
 $Comp
-L Device:R R?
+L Device:R R3
 U 1 1 5D159BAF
 P 5100 1600
-F 0 "R?" V 4893 1600 50  0000 C CNN
+F 0 "R3" V 4893 1600 50  0000 C CNN
 F 1 "R" V 4984 1600 50  0000 C CNN
-F 2 "" V 5030 1600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 5030 1600 50  0001 C CNN
 F 3 "~" H 5100 1600 50  0001 C CNN
 	1    5100 1600
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R4
 U 1 1 5D15A660
 P 5100 2150
-F 0 "R?" V 4893 2150 50  0000 C CNN
+F 0 "R4" V 4893 2150 50  0000 C CNN
 F 1 "R" V 4984 2150 50  0000 C CNN
-F 2 "" V 5030 2150 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 5030 2150 50  0001 C CNN
 F 3 "~" H 5100 2150 50  0001 C CNN
 	1    5100 2150
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R5
 U 1 1 5D15A8D8
 P 5100 2700
-F 0 "R?" V 4893 2700 50  0000 C CNN
+F 0 "R5" V 4893 2700 50  0000 C CNN
 F 1 "R" V 4984 2700 50  0000 C CNN
-F 2 "" V 5030 2700 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P1.90mm_Vertical" V 5030 2700 50  0001 C CNN
 F 3 "~" H 5100 2700 50  0001 C CNN
 	1    5100 2700
 	0    1    1    0   
@@ -131,4 +133,16 @@ Wire Wire Line
 	4800 2150 4950 2150
 Wire Wire Line
 	4950 1600 4800 1600
+Text HLabel 6050 1400 2    50   Output ~ 0
+Aout
+Wire Wire Line
+	5650 1400 6050 1400
+Text HLabel 6050 1950 2    50   Output ~ 0
+Bout
+Wire Wire Line
+	5650 1950 6050 1950
+Text HLabel 6050 2500 2    50   Output ~ 0
+Cout
+Wire Wire Line
+	6050 2500 5650 2500
 $EndSCHEMATC
